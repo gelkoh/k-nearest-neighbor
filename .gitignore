@@ -1,0 +1,6 @@
+.DS_Store
+cifar-10-batches-py/
+.venv/
+__pycache__/
+*.pyc
+*.pkl

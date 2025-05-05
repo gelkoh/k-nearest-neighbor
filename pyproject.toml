@@ -1,0 +1,26 @@
+[project]
+name = "k-nearest-neighbor"
+version = "0.1.0"
+description = "Implementation of the k-nearest neighbor algorithm on the CIFAR-10 dataset"
+authors = [
+    {name = "gelkoh"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow (>=11.2.1,<12.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "numpy (>=2.2.5,<3.0.0)"
+]
+
+packages = [
+    { include = "k_nearest_neighbor.py" }
+]
+
+[tool.poetry.scripts]
+k-nearest-neighbor = "k_nearest_neighbor:run"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
