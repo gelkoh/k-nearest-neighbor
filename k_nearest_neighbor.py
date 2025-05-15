@@ -1,5 +1,4 @@
 import argparse, textwrap
-from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 import pickle
